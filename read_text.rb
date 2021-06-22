@@ -11,5 +11,7 @@ file_lines = file.readlines.map(&:chomp)
 # file_split = file.read("in/text.txt").split
 # puts file_split
 
-line = []
-File.foreach("in/text.txt") { |line| puts line }
+line_array = []
+File.foreach("in/text.txt") { |line| line_array.append(line) }
+line_array = line_array.reverse()
+puts line_array
