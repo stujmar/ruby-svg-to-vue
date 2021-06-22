@@ -47,6 +47,10 @@ access_array[1..-3] #=> [2,3,4] from start index to backcount position.
 # Or use the at method on the array
 print access_array.at(5)
 
-lame_array = ["cool", "cool", "lame"]
-cool_array = lame_array.slice(0,2)
-puts cool_array
+puts # line break
+
+mixed_array = ["cool", "cool", "lame"]
+cool_array = mixed_array.slice(0,2)
+lame_array = mixed_array.slice(-1)
+print cool_array
+print lame_array
