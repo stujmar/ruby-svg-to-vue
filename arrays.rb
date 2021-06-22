@@ -54,3 +54,18 @@ cool_array = mixed_array.slice(0,2)
 lame_array = mixed_array.slice(-1)
 print cool_array
 print lame_array
+
+puts # line break
+
+# Try out some fetch methods.
+abc_array = ['a', 'b', 'c', 'd', 'e', 'f']
+print abc_array.fetch(100, 'oops ')
+print abc_array.fetch(2)
+
+# First and last
+print abc_array.first
+print abc_array.last
+
+# Take take or drop the first n elements
+print abc_array.take(3)
+print abc_array.drop(3)
