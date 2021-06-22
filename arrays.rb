@@ -69,3 +69,10 @@ print abc_array.last
 # Take take or drop the first n elements
 print abc_array.take(3)
 print abc_array.drop(3)
+
+puts
+puts "Array lengths:" # line break
+array_browsers = ['Chrome', 'Firefox', 'Safari', 'Opera', 'Edge']
+puts array_browsers.length
+puts array_browsers.count
+puts array_browsers.size
