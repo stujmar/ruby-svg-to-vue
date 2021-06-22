@@ -7,7 +7,10 @@ puts 'Print File'
 puts file.to_s
 puts 'Print File Data'
 puts file_data.to_s
-# puts file.to_s
-# puts file_data.to_s
-# print file_data
-File.write("out/map.vue", file)
+
+output_array = []
+output_string = "<template>\n"
+File.foreach("in/map.svg") { |line| output_array.append(line) }
+output_array.each { |line| output_string = output_string + "\t" + line }
+output_string += "</template>"
+File.write("out/map.vue", output_string)
