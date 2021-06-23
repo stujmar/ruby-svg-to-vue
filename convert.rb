@@ -15,6 +15,7 @@ output_array.each_with_index {
     |line, index| 
     if /id="/.match(line)
         puts "we got a match at #{index}"
+        output_array[index] = "updated path element"
     end
 }
 output_array.each { |line| output_string = output_string + "\t" + line }
